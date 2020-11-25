@@ -1,0 +1,327 @@
+<!--
+    David Haas
+    11/2/20
+    filename https://jumpstart.greenriverdev.com/playbook/JumpStart/includes/footer.html
+    Displays results of section 2 answers to SWOT analysis
+  -->
+
+<table class="table table-bordered" id="table2">
+    <thead class="thead-light">
+    <tr>
+        <th scope="col">STRENGTHS</th>
+        <th scope="col">WEAKNESSES</th>
+        <th scope="col">OPPORTUNITIES</th>
+        <th scope="col">THREATS</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @b1 == 'yes' }}" >
+            We have relevant USP(s)
+        </check></td>
+        <td><check if="{{ @b1 == 'no' }}" >
+            We do not have relevant USP(s)
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>{{ @b2 }}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W,T -->
+        <td><check if="{{ @b3 == 'yes' }}" >
+            Our USP is expressed in the terms of benefits to the customer
+        </check></td>
+        <td><check if="{{ @b3 == 'no' }}" >
+            Our USP is not benefits based
+        </check></td>
+        <td></td>
+        <td><check if="{{ @b3 == 'no' }}" >
+            We might connect better with customers by revising our USP to focus
+            on benefits
+        </check></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @b4 == 'yes' }}" >
+            Our USP resonates with our prospects
+        </check></td>
+        <td><check if="{{ @b4 == 'no' }}" >
+            Our USP needs revision, as it doesn't resonate with customers,
+            or we need to find out if it does
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @b5 == 'yes' }}" >
+            Our USP includes an attractive guarantee
+        </check></td>
+        <td><check if="{{ @b5 == 'no' }}" >
+            By putting a guarantee in our USP, we might close more prospects
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @b6 == 'yes' }}" >
+            Our marketing messages integrate our USP
+        </check></td>
+        <td><check if="{{ @b6 == 'no' }}" >
+            We might capture more prospects by integrating our USP into our
+            marketing messages
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W,O -->
+        <td><check if="{{ @b7 == 'yes' }}" >
+            Our sales people know and use our USP
+        </check></td>
+        <td><check if="{{ @b7 == 'no' }}" >
+            Our sales people don't know or use our USP. Find out why
+        </check></td>
+        <td><check if="{{ @b7 == 'no' }}" >
+            We may close more business if our sales people know and use our USP
+        </check></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @b8 == 'yes' }}" >
+            Because our team knows our USP, we are more likely to deliver on it
+            consistently
+        </check></td>
+        <td><check if="{{ @b8 == 'no' }}" >
+            Because our team doesn't know our USP, we can't expect them to deliver
+            on it consistently
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @b9 == 'yes' }}" >
+            We consistently deliver on our USP
+        </check></td>
+        <td><check if="{{@b9 == 'no' }}" >
+            Our USP promise lacks credibility because we don't deliver on it consistently
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S,-->
+        <td><check if="{{ @b9 == 'yes' }}" >
+            We deliver consistenly on our USP because of the following:
+            &nbsp&nbsp{{ @b10 }}
+        </check></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- N-W -->
+        <td></td>
+        <td><check if="{{ @b9 == 'no' }}" >
+            To deliver consistently on our USP we must address processes as follows:
+            &nbsp&nbsp{{ @b11 }}
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- N-W -->
+        <td></td>
+        <td><check if="{{ @b9 == 'no' }}" >
+            To deliver consistently on our USP training must be addressed as follows:
+            &nbsp&nbsp{{ @b12 }}
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- N-W -->
+        <td></td>
+        <td><check if="{{ @b9 == 'no' }}" >
+            To deliver on our USP consistently, management needs to imporove as follows:
+            &nbsp&nbsp{{ @b13 }}
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @b14 == 'yes' }}" >
+            We have written values that reflect the organization
+        </check></td>
+        <td><check if="{{ @b14 == 'no' }}" >
+            We do not have written values, so we can't expect anyone to know them
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @b15 == 'yes' }}" >
+            Our values are described behaviorally so our team knows how they
+            are expected to act
+        </check></td>
+        <td><check if="{{ @b15 == 'no' }}" >
+            Because our values aren't described, our team doesn't know what
+            behaviours are expected of them
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @b16 == 'yes' }}" >
+            We do have a hierarchy of values so we can easily resolve any
+            perceived conflicts between them
+        </check></td>
+        <td><check if="{{ @b16 == 'no' }}" >
+            We have no hierarchy to our values so our people don't have guidance
+            when there is a percieved conflict between our values
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><check if="{{ @b17yn == 'yes' }}" >
+            {{ @b17 }} - Lived
+        </check></td>
+        <td><check if="{{ @b17yn == 'no' }}" >
+            {{ @b17 }} - Not lived
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><check if="{{ @b18yn == 'yes' }}" >
+            {{ @b18 }} - Lived
+        </check></td>
+        <td><check if="{{ @b18yn == 'no' }}" >
+            {{ @b18 }} - Not lived
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><check if="{{ @b19yn == 'yes' }}" >
+            {{ @b19 }} - Lived
+        </check></td>
+        <td><check if="{{ @b19yn == 'no' }}" >
+            {{ @b19 }} - Not lived
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><check if="{{ @b20yn == 'yes' }}" >
+            {{ @b20 }} - Lived
+        </check></td>
+        <td><check if="{{ @b20yn == 'no' }}" >
+            {{ @b20 }} - Not lived
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><check if="{{ @b21yn == 'yes' }}" >
+            {{ @b21 }} - Lived
+        </check></td>
+        <td><check if="{{ @b21yn == 'no' }}" >
+            {{ @b21 }} - Not lived
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><check if="{{ @b22yn == 'yes' }}" >
+            {{ @b22 }} - Lived
+        </check></td>
+        <td><check if="{{ @b22yn == 'no' }}" >
+            {{ @b22 }} - Not lived
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><check if="{{ @b23yn == 'yes' }}" >
+            {{ @b23 }} - Lived
+        </check></td>
+        <td><check if="{{ @b23yn == 'no' }}" >
+            {{ @b23 }} - Not lived
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><check if="{{ @b24yn == 'yes' }}" >
+            {{ @b24 }} - Lived
+        </check></td>
+        <td><check if="{{ @b24yn == 'no' }}" >
+            {{ @b24 }} - Not lived
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><check if="{{ @b25yn == 'yes' }}" >
+            {{ @b25 }} - Lived
+        </check></td>
+        <td><check if="{{ @b25yn == 'no' }}" >
+            {{ @b25 }} - Not lived
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><check if="{{ @b26yn == 'yes' }}" >
+            {{ @b26 }} - Lived
+        </check></td>
+        <td><check if="{{ @b26yn == 'no' }}" >
+            {{ @b26 }} - Not lived
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><check if="{{ @b27yn == 'yes' }}" >
+            {{ @b27 }} - Lived
+        </check></td>
+        <td><check if="{{ @b27yn == 'no' }}" >
+            {{ @b27 }} - Not lived
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><check if="{{ @b28yn == 'yes' }}" >
+            {{ @b28 }} - Lived
+        </check></td>
+        <td><check if="{{ @b28yn == 'no' }}" >
+            {{ @b28 }} - Not lived
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td></td>
+        <td>Because we don't live those values, we experience the following problems:
+            &nbsp&nbsp{{ @b29 }} </td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>

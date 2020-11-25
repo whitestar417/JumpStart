@@ -1,0 +1,183 @@
+<!--
+    David Haas
+    11/6/20
+    filename https://jumpstart.greenriverdev.com/playbook/JumpStart/includes/footer.html
+    Displays results of section 7 answers to SWOT analysis
+  -->
+
+<table class="table table-bordered" id="table7">
+    <thead class="thead-light">
+    <tr>
+        <th scope="col">STRENGTHS</th>
+        <th scope="col">WEAKNESSES</th>
+        <th scope="col">OPPORTUNITIES</th>
+        <th scope="col">THREATS</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <!-- Y-S, N-W,O -->
+        <td><check if="{{ @g1 == 'yes' }}" >
+            We do regular annual strategic planning
+        </check></td>
+        <td><check if="{{ @g1 == 'no' }}" >
+            We don't do annual strategic planning, which means we may easily lose
+            focus or take too long to make progress
+        </check></td>
+        <td><check if="{{ @g1 == 'no' }}" >
+            By engaging in annual strategic planning, we are more likely to
+            accelerate success, remain focused, develop discipline and create
+            team loyalty
+        </check></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @g2 == 'yes' }}" >
+            Because we involve the team in strategic planning, we are likely to get
+            more buy in and to surface the correct issues
+        </check></td>
+        <td><check if="{{ @g2 == 'no' }}" >
+            Because we don't involve the team in strategic planning, we may miss
+            issues and lack full buy in
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @g3 == 'yes' }}" >
+            We don't just set goals, but identify specific tactics
+        </check></td>
+        <td><check if="{{ @g3 == 'no' }}" >
+            In our strategic planning, we fail to identify specific tactics
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @g4 == 'yes' }}" >
+            Throughout the year, we evaluate the plan and the success of its
+            implementation so as to make adjustments where warranted
+        </check></td>
+        <td><check if="{{ @g4 == 'no' }}" >
+            We do not evaluate the success of the plan & its implementation
+            throughout the year, which means that we may not be making necessary
+            adjustments along the way
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @g5 == 'yes' }}" >
+            We evaluate the success of the plan at the end of the year to help
+            inform out next plan
+        </check></td>
+        <td><check if="{{ @g5 == 'no' }}" >
+            We fail to evaluate the success of our plan at year end
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @g6 == 'yes' }}" >
+            Within the plan, we create clear accountabilities to increase the
+            chances of success
+        </check></td>
+        <td><check if="{{ @g6 == 'no' }}" >
+            We fail to create clear accountabilities within our plan
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @g7 == 'yes' }}" >
+            To implement our strategic plan, we create quarterly or trimester
+            action plans
+        </check></td>
+        <td><check if="{{ @g7 == 'no' }}" >
+            We fail to translate our strategic plan into quarterly or trimester
+            action plans
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @g8 == 'yes' }}" >
+            To ensure tasks get done, we schedule the specific tasks
+        </check></td>
+        <td><check if="{{ @g8 == 'no' }}" >
+            Within our action plans, we fail to schedule the specific tasks
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-O -->
+        <td><check if="{{ @g9 == 'yes' }}" >
+            We ensure tasks are assigned to specific people
+        </check></td>
+        <td></td>
+        <td><check if="{{ @g9 == 'no' }}" >
+            Within our action plans, we fail to assign the tasks and tactics
+            to specific people
+        </check></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @g10 == 'yes' }}" >
+            In our action plan, we've identified specific measures to help us
+            evaluate our success
+        </check></td>
+        <td><check if="{{ @g10 == 'no' }}" >
+            "In our action plan, we fail to identify specific measures that will
+            tell us if we're successful or not
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @g11 == 'yes' }}" >
+            We have weekly or biweekly meetings with those responsible to ensure
+            the plan is consistently and successfully executed
+        </check></td>
+        <td><check if="{{ @g11 == 'no' }}" >
+            We do not hold regular meetings to ensure the action plan is
+            successfully/consistently executed
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-O -->
+        <td><check if="{{ @g12 == 'yes' }}" >
+            We evaluate the success of our action plan to inform our next plan
+        </check></td>
+        <td></td>
+        <td><check if="{{ @g12 == 'no' }}" >
+            At the end of the quarter or trimester, we do not evaluate the
+            success of the action plan to inform our next plan
+        </check></td>
+        <td></td>
+    </tr>
+    <tr>
+        <!-- Y-S, N-W -->
+        <td><check if="{{ @g13 == 'yes' }}" >
+            I personally plan my weeks and days to ensure I stay focused on what
+            matters most
+        </check></td>
+        <td><check if="{{ @g13 == 'no' }}" >
+            I plan my weeks/ days to ensure I stay focused on what matters most
+        </check></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
