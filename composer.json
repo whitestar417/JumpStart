@@ -1,0 +1,27 @@
+{
+  "name": "jumpstar",
+  "authors": [
+    {
+      "name": "Lewis Scott",
+      "email": "lscott19@mail.greenriver.edu"
+    },
+    {
+      "name": "David Haas",
+      "email": "Dhaas3@mail.greenriver.edu"
+    },
+    {
+      "name": "Roldan Barbante",
+      "email": "Rbarbante@mail.greenriver.edu"
+    },
+    {
+      "name": "Chunhai Yang",
+      "email": "cyang21@mail.greenriver.edu"
+    }
+
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  },
+  "autoload": {
+    "classmap": ["classes/", "model/", "controller"]}
+}

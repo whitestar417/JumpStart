@@ -1,0 +1,144 @@
+.err {
+    color: darkred;
+}
+
+.btn {
+    background-color: #0d4d80;
+    color: white;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00a2d6;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.home {
+    width: 200px;
+}
+
+.navbar {
+    background-color: #00a2d6 ;
+}
+
+.dropdown-item {
+    background-color: #00a2d6 ;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* youtube */
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+/* linkedin */
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.formatHidden {
+    visibility: hidden;
+}
+
+#loginUser {
+    margin-top:50px;
+    align-items: center;
+}
+
+#username {
+    width: 250px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+
+#password {
+    width: 250px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#confirm {
+    width: 250px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#request {
+    background-color: white;
+    color: #007bb5;
+    border-color: white;
+
+}
+
+#loginSubmit {
+    background-color: #007bb5;
+}
+
+
+#userSubmit {
+    background-color: #007bb5
+}
+
+.sidebar-section {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.make-me-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    padding: 0 15px;
+}

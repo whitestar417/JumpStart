@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Section 2</title>
+    <include href="includes/header.html"></include>
+</head>
+
+<body onload="toggleVisibility()">
+<include href="includes/navBar.html"></include>
+
+<div class="container">
+    <h1>Section 2 - What We Stand For</h1>
+    <hr>
+
+    <form action="#" method="post" class="form-horizontal">
+        <div class="row">
+            <div class="col-10">
+
+                <!-- The Unique Selling Proposition of Section 2-->
+                <h3>Our Unique Selling Proposition</h3>
+                <!-- Q1: Do you have a USP for your business or USP's for different lines?-->
+                <div class="container">
+                    <label><strong>Question 1 -</strong> Do you have a USP for your business or USP's for different lines?</label>
+                    <div class="form-check-inline">
+                        <input type="radio" id="b1a" name="b1" class="form-check-input" value="yes"
+                               onchange="toggleVisibility()"
+                        <check if="{{ @b1 == 'yes' }}" >
+                            checked="checked"
+                        </check>>
+                        <label class="form-check-label" for="b1a" id="b1q1a">Yes</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input type="radio" id="b1b" name="b1" class="form-check-input" value="no"
+                        <check if="{{ @b1 == 'no' }}" >
+                            checked="checked"
+                        </check>>
+                        <label class="form-check-label" for="b1b" id="b1q1b">No</label>
+                    </div>
+                </div>
+                <!-- If answer is Yes, another Q: What is your USP-->
+                <div class="formatHidden" id="b1y">
+                    <div class="form-group">
+                        <label for="b2q2" id="b2q2">What is your USP/What are your USP's?</label>
+                        <textarea class="form-control" id="b2q2a" name="b2" rows="3">{{ @b2 }}</textarea>
+                    </div>
+                    <!-- Next Q: -->
+                    <div class="container pl-10">
+                        <div class="form-group">
+                            <div class="container">
+                                <label id="b3q3">Does the USP have a clear Promise framed in terms of benefits to the customer?</label>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="b3a" name="b3" class="form-check-input" value="yes"
+                                    <check if="{{ @b3 == 'yes' }}" >
+                                        checked="checked"
+                                    </check>>
+                                    <label class="form-check-label" for="b3a" id="b3q3a">Yes</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="b3b" name="b3" class="form-check-input" value="no"
+                                    <check if="{{ @b3 == 'no' }}" >
+                                        checked="checked"
+                                    </check>>
+                                    <label class="form-check-label" for="b3b" id="b3q3b">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Next Q: -->
+                        <div class="form-group">
+                            <div class="container">
+                                <label id="b4q4">Does it resonate with your prospects?</label>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="b4a" name="b4" class="form-check-input" value="yes"
+                                    <check if="{{ @b3 == 'yes' }}" >
+                                        checked="checked"
+                                    </check>>
+                                    <label class="form-check-label" for="b4a" id="b4q4a">Yes</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="b4b" name="b4" class="form-check-input" value="no"
+                                    <check if="{{ @b4 == 'no' }}" >
+                                        checked="checked"
+                                    </check>>
+                                    <label class="form-check-label" for="b4b" id="b4q4b">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Next Q: -->
+                        <div class="form-group">
+                            <div class="container">
+                                <label id="b5q5">Does your USP have an attractive guarantee?</label>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="b5a" name="b5" class="form-check-input" value="yes"
+                                    <check if="{{ @b5 == 'yes' }}" >
+                                        checked="checked"
+                                    </check>>
+                                    <label class="form-check-label" for="b5a" id="b5q5a">Yes</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="b5b" name="b5" class="form-check-input" value="no"
+                                    <check if="{{ @b5 == 'no' }}" >
+                                        checked="checked"
+                                    </check>>
+                                    <label class="form-check-label" for="b5b" id="b5q5b">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Next Q: -->
+                        <div class="form-group">
+                            <div class="container">
+                                <label id="b6q6">Is the USP Incorporated into marketing messages?</label>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="b6a" name="b6" class="form-check-input" value="yes"
+                                    <check if="{{ @b6 == 'yes' }}" >
+                                        checked="checked"
+                                    </check>>
+                                    <label class="form-check-label" for="b6a" id="b6q6a">Yes</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="b6b" name="b6" class="form-check-input" value="no"
+                                    <check if="{{ @b6 == 'no' }}" >
+                                        checked="checked"
+                                    </check>>
+                                    <label class="form-check-label" for="b6b" id="b6q6b">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Next Q: -->
+                        <div class="form-group">
+                            <div class="container">
+                                <label id="b7q7">Do your sales people know it and use it?</label>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="b7a" name="b7" class="form-check-input" value="yes"
+                                    <check if="{{ @b7 == 'yes' }}" >
+                                        checked="checked"
+                                    </check>>
+                                    <label class="form-check-label" for="b7a" id="b7q7a">Yes</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="b7b" name="b7" class="form-check-input" value="no"
+                                    <check if="{{ @b7 == 'no' }}" >
+                                        checked="checked"
+                                    </check>>
+                                    <label class="form-check-label" for="b7b" id="b7q7b">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Next Q: -->
+                        <div class="form-group">
+                            <div class="container">
+                                <label id="b8q8">Does your team know it?</label>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="b8a" name="b8" class="form-check-input" value="yes"
+                                    <check if="{{ @b8 == 'yes' }}" >
+                                        checked="checked"
+                                    </check>>
+                                    <label class="form-check-label" for="b8a" id="b8q8a">Yes</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="b8b" name="b8" class="form-check-input" value="no"
+                                    <check if="{{ @b8 == 'no' }}" >
+                                        checked="checked"
+                                    </check>>
+                                    <label class="form-check-label" for="b8b" id="b8q8b">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Next Q: Do you consistently deliver on the USP? -->
+                        <div class="form-group">
+                            <div class="container">
+                                <label id="b9q9">Do you consistently deliver on the USP?</label>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="b9a" name="b9" class="form-check-input" value="yes"
+                                    <check if="{{ @b9 == 'yes' }}" >
+                                        checked="checked"
+                                    </check>>
+                                    <label class="form-check-label" for="b9a" id="b9q9a">Yes</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="b9b" name="b9" class="form-check-input" value="no"
+                                           onchange="toggleVisibility()"
+                                    <check if="{{ @b9 == 'no' }}" >
+                                        checked="checked"
+                                    </check>>
+                                    <label class="form-check-label" for="b9b" id="b9q9b">No</label>
+                                </div>
+                            </div>
+                            <!-- If answer if yes, then next Q: what allows you to do so? -->
+                            <div class="container pl-20 formatHidden" id="b10y">
+                                <label for="b10a" id="b10q">What allows you to do so?</label>
+                                <textarea class="form-control" id="b10a" name="b10" rows="3">{{ @b10 }}</textarea>
+                            </div>
+
+                            <!-- If answer if no, then next Q: what processes need to be addressed? -->
+                            <div class="container pl-20 formatHidden" id="b11n">
+                                <label for="b11a" id="b11q">What processes need to be addressed?</label>
+                                <textarea class="form-control" id="b11a" name="b11" rows="3">{{ @b11 }}</textarea>
+                            </div>
+
+                            <!-- If answer if no, then next Q: What training needs to be done? -->
+                            <div class="container pl-20 formatHidden" id="b12n">
+                                <label for="b12a" id="b12q">What training needs to be done?</label>
+                                <textarea class="form-control" id="b12a" name="b12" rows="3">{{ @b12 }}</textarea>
+                            </div>
+                            <!-- If answer if no, then next Q: What management needs improving? -->
+                            <div class="container pl-20 formatHidden" id="b13n">
+                                <label for="b13a" id="b13q">What management needs improving?</label>
+                                <textarea class="form-control" id="b13a" name="b13" rows="3">{{ @b13 }}</textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- The Values section of Section 2 -->
+                    <h3>Our Values</h3>
+                    <!--  Q: Do you have a written down the values of the organization? -->
+                    <div class="container">
+                        <label><strong>Question 2 -</strong> Do you have a written down the values of the organization?</label>
+                        <div class="form-check-inline">
+                            <input type="radio" id="b14a" name="b14" class="form-check-input" value="yes"
+                                   onchange="toggleVisibility()"
+                            <check if="{{ @b14 == 'yes' }}" >
+                                checked="checked"
+                            </check>>
+                            <label class="form-check-label" for="b14a" id="b14q14a">Yes</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="radio" id="b14b" name="b14" class="form-check-input" value="no"
+                            <check if="{{ @b14 == 'no' }}" >
+                                checked="checked"
+                            </check>>
+                            <label class="form-check-label" for="b14b" id="b14q14b">No</label>
+                        </div>
+                    </div>
+                    <!-- If answer is Yes, then next Q: Are the values described in ways.....? -->
+                    <div class="formatHidden" id="b15y">
+                        <div class="form-group">
+                            <label for="b15a" id="b15q">Are the values described in ways that help your people understand the behaviors that demonstrate those values?</label>
+                            <div class="form-check-inline">
+                                <input type="radio" id="b15a" name="b15" class="form-check-input" value="yes"
+                                       onchange="toggleVisibility()"
+                                <check if="{{ @b15 == 'yes' }}" >
+                                    checked="checked"
+                                </check>>
+                                <label class="form-check-label" for="b15a" id="b15q15a">Yes</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input type="radio" id="b15b" name="b15" class="form-check-input" value="no"
+                                <check if="{{ @b15 == 'no' }}" >
+                                    checked="checked"
+                                </check>>
+                                <label class="form-check-label" for="b15b" id="b15q15b">No</label>
+                            </div>
+                        </div>
+                        <!--  Next Q: Is there a hierarchy to the values ot have you at least identified the top 3? -->
+                        <div class="form-group">
+                            <label for="b16q" id="b16q">Is there a hierarchy to the values or have you at least identified the top 3?</label>
+                            <div class="form-check-inline">
+                                <input type="radio" id="b16a" name="b16" class="form-check-input" value="yes"
+                                       onchange="toggleVisibility()"
+                                <check if="{{ @b16 == 'yes' }}" >
+                                    checked="checked"
+                                </check>>
+                                <label class="form-check-label" for="b16a" id="b16q16a">Yes</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input type="radio" id="b16b" name="b16" class="form-check-input" value="no"
+                                <check if="{{ @b16 == 'no' }}" >
+                                    checked="checked"
+                                </check>>
+                                <label class="form-check-label" for="b16b" id="b16q16b">No</label>
+                            </div>
+                        </div>
+                        <!--  Below, there are a bunch of Yes / No questions to identify each value and whether or not
+                          you feel the value is "lived" in the organization-->
+                        <div class="container pl-10">
+                            <div class="form-group">
+                                <div class="container">
+                                    <label id="">Below, identify each value and whether or not you feel the value is "lived"
+                                        in the organization to the extent expect/want to see (You don't have to have 12)</label>
+                                    <div class="form-check-inline">
+                                        <input class="form-control" type="text" name="b17" id="b17" placeholder="Value 1" value="{{ @b17 }}">
+                                        <input type="radio" id="b17a" name="b17yn" class="form-check-input" value="yes"
+                                        <check if="{{ @b17yn == 'yes' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b17a" id="b17q17a">Yes</label>
+                                        <input type="radio" id="b17b" name="b17yn" class="form-check-input" value="no"
+                                        <check if="{{ @b17yn == 'no' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b17b" id="b17q17b">No</label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <input class="form-control" type="text" name="b18" id="b18" placeholder="Value 2" value="{{ @b18 }}">
+                                        <input type="radio" id="b18a" name="b18yn" class="form-check-input" value="yes"
+                                        <check if="{{ @b18yn == 'yes' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b18a" id="b18q18a">Yes</label>
+                                        <input type="radio" id="b18b" name="b18yn" class="form-check-input" value="no"
+                                        <check if="{{ @b18yn == 'no' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b18b" id="b18q18b">No</label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <input class="form-control" type="text" name="b19" id="b19" placeholder="Value 3" value="{{ @b19 }}">
+                                        <input type="radio" id="b19a" name="b19yn" class="form-check-input" value="yes"
+                                        <check if="{{ @b19yn == 'yes' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b19a" id="b19q19a">Yes</label>
+                                        <input type="radio" id="b19b" name="b19yn" class="form-check-input" value="no"
+                                        <check if="{{ @b19yn == 'no' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b19b" id="b19q19b">No</label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <input class="form-control" type="text" name="b20" id="b20" placeholder="Value 4" value="{{ @b20 }}">
+                                        <input type="radio" id="b20a" name="b20yn" class="form-check-input" value="yes"
+                                        <check if="{{ @b20yn == 'yes' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b20a" id="b20q20a">Yes</label>
+                                        <input type="radio" id="b20b" name="b20yn" class="form-check-input" value="no"
+                                        <check if="{{ @b20yn == 'no' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b20b" id="b20q20b">No</label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <input class="form-control" type="text" name="b21" id="b21" placeholder="Value 5" value="{{ @b21 }}">
+                                        <input type="radio" id="b21a" name="b21yn" class="form-check-input" value="yes"
+                                        <check if="{{ @b21yn == 'yes' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b21a" id="b21q21a">Yes</label>
+                                        <input type="radio" id="b21b" name="b21yn" class="form-check-input" value="no"
+                                        <check if="{{ @b21yn == 'no' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b21b" id="b21q21b">No</label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <input class="form-control" type="text" name="b22" id="b22" placeholder="Value 6" value="{{ @b22 }}">
+                                        <input type="radio" id="b22a" name="b22yn" class="form-check-input" value="yes"
+                                        <check if="{{ @b22yn == 'yes' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b22a" id="b22q22a">Yes</label>
+                                        <input type="radio" id="b22b" name="b22yn" class="form-check-input" value="no"
+                                        <check if="{{ @b22yn == 'no' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b22b" id="b22q22b">No</label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <input class="form-control" type="text" name="b23" id="b23" placeholder="Value 7" value="{{ @b23 }}">
+                                        <input type="radio" id="b23a" name="b23yn" class="form-check-input" value="yes"
+                                        <check if="{{ @b23yn == 'yes' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b23a" id="b23q23a">Yes</label>
+                                        <input type="radio" id="b23b" name="b23yn" class="form-check-input" value="no"
+                                        <check if="{{ @b23yn == 'no' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b23b" id="b23q23b">No</label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <input class="form-control" type="text" name="b24" id="b24" placeholder="Value 8" value="{{ @b24 }}">
+                                        <input type="radio" id="b24a" name="b24yn" class="form-check-input" value="yes"
+                                        <check if="{{ @b24yn == 'yes' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b24a" id="b24q24a">Yes</label>
+                                        <input type="radio" id="b24b" name="b24yn" class="form-check-input" value="no"
+                                        <check if="{{ @b24yn == 'no' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b24b" id="b24q24b">No</label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <input class="form-control" type="text" name="b25" id="b25" placeholder="Value 9" value="{{ @b25 }}">
+                                        <input type="radio" id="b25a" name="b25yn" class="form-check-input" value="yes"
+                                        <check if="{{ @b25yn == 'yes' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b25a" id="b25q25a">Yes</label>
+                                        <input type="radio" id="b25b" name="b25yn" class="form-check-input" value="no"
+                                        <check if="{{ @b25yn == 'no' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b25b" id="b25q25b">No</label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <input class="form-control" type="text" name="b26" id="b26" placeholder="Value 10" value="{{ @b26 }}">
+                                        <input type="radio" id="b26a" name="b26yn" class="form-check-input" value="yes"
+                                        <check if="{{ @b26yn == 'yes' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b26a" id="b26q26a">Yes</label>
+                                        <input type="radio" id="b26b" name="b26yn" class="form-check-input" value="no"
+                                        <check if="{{ @b26yn == 'no' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b26b" id="b26q26b">No</label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <input class="form-control" type="text" name="b27" id="b27" placeholder="Value 11" value="{{ @b27 }}">
+                                        <input type="radio" id="b27a" name="b27yn" class="form-check-input" value="yes"
+                                        <check if="{{ @b27yn == 'yes' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b27a" id="b27q27a">Yes</label>
+                                        <input type="radio" id="b27b" name="b27yn" class="form-check-input" value="no"
+                                        <check if="{{ @b27yn == 'no' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b27b" id="b27q27b">No</label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <input class="form-control" type="text" name="b28" id="b28" placeholder="Value 12" value="{{ @b28 }}">
+                                        <input type="radio" id="b28a" name="b28yn" class="form-check-input" value="yes"
+                                        <check if="{{ @b28yn == 'yes' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b28a" id="b28q28a">Yes</label>
+                                        <input type="radio" id="b28b" name="b28yn" class="form-check-input" value="no"
+                                        <check if="{{ @b28yn == 'no' }}" >
+                                            checked="checked"
+                                        </check>>
+                                        <label class="form-check-label" for="b28b" id="b28q28b">No</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="container">
+                                    <label id="b29q">To the extent that you are not living any of the values, what are
+                                    the implications or consequences of that?(e.g.errors, low morale, low productivity,
+                                    unhappy customers, lower performance, weak accountability,slow or no growth...?)</label>
+                                    <textarea class="form-control" id="b29" name="b29" rows="3">{{ @b29 }}</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The privacy disclaimer -->
+                <div class="col-4">
+                    <div class="container card bg-light rounded text-center">
+                        <p><strong>Note:</strong> Information entered is protected by our
+                            privacy policy. All answers are kept strictly confidential.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="text-right">
+                    <button type="submit" class="btn btn-primary">Continue</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="js/JavaScript2.js"></script>
+<include href="includes/footer.html"></include>
+</body>
+</html>
+

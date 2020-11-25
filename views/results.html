@@ -1,0 +1,142 @@
+<!--
+  11/2/20
+  filename https://jumpstart.greenriverdev.com/playbook/JumpStart/includes/footer.html
+  Displays results of all answers to SWOT analysis
+  -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>SWOT Results</title>
+    <include href="includes/header.html"></include>
+</head>
+
+<body>
+<include href="includes/navBar.html"></include>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-9">
+            <hr>
+            <div>
+                <h3>Purpose</h3>
+                <include href="includes/resultSec1.html"></include>
+                <h3>What we stand for</h3>
+                <include href="includes/resultSec2.html"></include>
+                <h3>Products/Services</h3>
+                <include href="includes/resultSec3.html"></include>
+                <h3>Promotion</h3>
+                <include href="includes/resultSec4.html"></include>
+                <h3>Processes</h3>
+                <include href="includes/resultSec5.html"></include>
+                <h3>People</h3>
+                <include href="includes/resultSec6.html"></include>
+                <h3>Planning</h3>
+                <include href="includes/resultSec7.html"></include>
+                <h3>Personal Growth</h3>
+                <include href="includes/resultSec8.html"></include>
+                <h3>Others</h3>
+                <include href="includes/resultSec9.html"></include>
+                <h3>The Final Four</h3>
+                <include href="includes/resultSec10.html"></include>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="sidebar-item sticky-top">
+                <div class="make-me-sticky">
+                    <div class="row border rounded bg-light pt-5 mt-2">
+                        <h5>Theme List</h5>
+                        <ul id="itemList"></ul>
+
+                        <form class="form-group" id="theme" action="#" method="post">
+                            <!-- get theme name -->
+                            <div class="form-group">
+                                <label for="themeName">Theme Name:</label>
+                                <input type="text" class="form-control" id="themeName" name="themeName"
+                                       value="<check if='{{ !empty(@selectedName) }}'>{{ @selectedName }}</check>">
+                                <span class="err" id="errName"></span>
+                                <span>
+                                <check if="{{ isset(@errors['name']) }}">
+                                    <p>{{ @errors['name'] }}</p>
+                                </check>
+                            </span>
+                                <br>
+                                <label for="theme">Choose a theme</label>
+                                <select name="theme">
+                                    <option value="theme1">Theme1</option>
+                                    <option value="theme2">Theme2</option>
+                                    <option value="theme3">Theme3</option>
+                                </select>
+
+                            </div>
+                            <button id="btnSubmit" class="btn-primary rounded">Submit Theme</button>
+
+                            <!-- theme items hidden form field-->
+                            <div class="form-group hidden">
+                                <input type="text" class="form-control hidden" id="items" name="items">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="bg-white">
+                        <div class="container">
+                            <p><strong>Theme 1 -</strong></p>
+                            <ul>
+                                <repeat group="{{ @itemArray }}" value="{{ @item }}">
+                                    <li>{{ @item }}</li>
+                                </repeat>
+                            </ul>
+                        </div>
+
+                        <div class="container">
+                            <p><strong>Theme 2 -</strong></p>
+                            <ul>
+                                <repeat group="{{ @itemArray2 }}" value="{{ @item }}">
+                                    <li>{{ @item }}</li>
+                                </repeat>
+                            </ul>
+                        </div>
+
+                        <div class="container">
+                            <p><strong>Theme 3 -</strong></p>
+                            <ul>
+                                <repeat group="{{ @itemArray3 }}" value="{{ @item }}">
+                                    <li>{{ @item }}</li>
+                                </repeat>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ingredients hidden form field-->
+    <div class="form-group hidden">
+        <input type="text" class="form-control hidden" id="items" name="items">
+    </div>
+
+</div>
+
+<include href="includes/footer.html"></include>
+
+
+<!-- add data table scripts -->
+<!--<script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+<script src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css"/>
+<!--<script type="text/javascript" src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js"></script>-->
+<script>
+    $('.table').DataTable({
+        select: {
+            items: 'cell'
+        },
+        paging: false
+    } );
+</script>
+
+<script src="js/themes.js"></script>
+</body>
+</html>
